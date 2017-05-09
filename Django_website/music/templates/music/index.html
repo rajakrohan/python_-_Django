@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>here are all my albums:</h1>
+    <ul>
+        {% for album in all_albums %}
+        <!-Here all_albums is a collection of objects and album impersonates each object in all_albums. This is why album.id and album.album_title make sense->
+        <li><a href = "/music/{{album.id}}">{{album.album_title}}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>﻿
